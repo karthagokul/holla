@@ -1,5 +1,5 @@
-#ifndef _HOLLA_
-#define _HOLLA_
+#ifndef _HOLLA
+#define _HOLLA
 
 
 #endif
