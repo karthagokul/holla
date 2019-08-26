@@ -1,3 +1,5 @@
 
+Install sudo apt-get install libmosquittopp-dev
+
 Cmd Client commandline parsing
 http://tclap.sourceforge.net/

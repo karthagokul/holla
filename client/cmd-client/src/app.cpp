@@ -1,9 +1,9 @@
 #include "app.h"
-
+#include "holla.h"
 
 HollaApp::HollaApp()
 {
-
+  hollaPController=new Holla();
 }
 
 bool HollaApp::exec(int argc,char **argv)
@@ -13,11 +13,11 @@ bool HollaApp::exec(int argc,char **argv)
   //provide an event loop for testing
   while(input!="exit")
   {
-      std::cin >> input;
-      if(routeCommands(input)==false)
-      {
-        return false;
-      }
+    std::cin >> input;
+    if(routeCommands(input)==false)
+    {
+      return false;
+    }
   }
 
   return true;
@@ -26,12 +26,16 @@ bool HollaApp::exec(int argc,char **argv)
 bool HollaApp::routeCommands(const std::string &command)
 {
   std::cout<<command<<std::endl;
+  if(command=="login")
+  {
+    //hollaPController->login();
+  }
   return true;
 }
 
 HollaApp::~HollaApp()
 {
-
+  delete hollaPController;
 }
 
 

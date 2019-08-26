@@ -2,6 +2,7 @@
 #define PROTOCOLPARSER_H
 
 #include <iostream>
+#include "event.h"
 
 //for now tightly coupled with google protobuf
 class ProtocolParser

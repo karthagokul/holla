@@ -1,6 +1,6 @@
 project(holla-cmd)
 cmake_minimum_required(VERSION 2.8)
-INCLUDE_DIRECTORIES(../include)
+INCLUDE_DIRECTORIES(../libholla/include)
 
 aux_source_directory(src SRC_LIST)
 add_executable(${PROJECT_NAME} ${SRC_LIST})

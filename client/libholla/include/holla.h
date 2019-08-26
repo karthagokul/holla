@@ -8,36 +8,9 @@
 
 //Presentation Controller
 
-class Event
-{
-  public:
-    virtual void error()=0;
-
-    // Time Stamp
-};
-
-class StatusEvent: public Event
-{
-  public:
-    virtual void profilePicChanged()=0;
-};
-
-class MessageEvent:public Event
-{
-
-};
-
-class BuddyMessageEvent:public MessageEvent
-{
-
-};
-
-class GroupMessageEvent:public MessageEvent
-{
-
-};
 
 
+/*
 class HollaEventObserver
 {
   public:
@@ -53,16 +26,17 @@ class HollaEventManager
     bool registerMe(HollaEventManager *aObserver);
 
   private:
-};
+};*/
 
-
+class ConnectionPool;
 class Holla
 {
   public:
     Holla();
     void onlogin();
     ~Holla();
-
+private:
+    ConnectionPool *conMan;
 };
 
 #endif

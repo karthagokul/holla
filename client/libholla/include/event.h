@@ -33,7 +33,9 @@ class GroupMessageEvent:public MessageEvent
 class EventFactory
 {
   public:
-    Event();
+   // EventFactory();
+   // Event getPing();
+
 };
 
 #endif // EVENT_H
